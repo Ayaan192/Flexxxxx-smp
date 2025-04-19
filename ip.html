@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Server IP</title>
+  <link rel="icon" href=
+  "flex smp.jpg"
+          type="image/x-icon" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" >
+  <link  href="ip.css" rel="stylesheet"/>
+</head>
+<body>
+</nav>
+
+  <div class="container">
+    <header class="header">
+      <h1>Minecraft Community</h1>
+      <p>Join our awesome server!</p>
+      <div class="ip-box">
+        <span id="server-ip">flexsmp.scalacubes.org</span>
+        <button onclick="copyIP()">Copy IP</button>
+      </div>
+    </header>
+
+    <section class="server-list">
+      <h2>Server Features</h2>
+      <ul>
+        <li>🌍 Survival Gem steal server</li>
+        <li>⚔️ PvP Arena</li>
+        <li>🏰 Custom Builds & Events</li>
+        <li>💬 Friendly Community</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 Flex SMP Server. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    function copyIP() {
+      const ip = document.getElementById("server-ip").innerText;
+      navigator.clipboard.writeText(ip).then(() => {
+        alert("IP address copied to clipboard!");
+      });
+    }
+  </script>
+</body>
+</html>
